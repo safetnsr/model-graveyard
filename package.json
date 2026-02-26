@@ -1,0 +1,52 @@
+{
+  "name": "@safetnsr/model-graveyard",
+  "version": "0.1.0",
+  "description": "find deprecated AI models in your codebase before they break in production",
+  "type": "module",
+  "bin": {
+    "graveyard": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "node --test tests/*.test.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "glob": "^11.0.1",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.0.0",
+    "tsup": "^8.4.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.0"
+  },
+  "files": [
+    "dist/",
+    "registry.yaml",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "author": "safetnsr",
+  "license": "MIT",
+  "keywords": [
+    "ai",
+    "llm",
+    "model",
+    "deprecated",
+    "codebase",
+    "cli",
+    "openai",
+    "anthropic",
+    "claude",
+    "gpt"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/safetnsr/model-graveyard.git"
+  }
+}

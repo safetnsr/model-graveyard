@@ -31,7 +31,7 @@ run graveyard migrate ./src to replace deprecated models
 
 ---
 
-![model-graveyard showcase](https://raw.githubusercontent.com/safetnsr/model-graveyard/main/docs/showcase.png)
+![model-graveyard](https://raw.githubusercontent.com/safetnsr/model-graveyard/main/docs/cover.jpg)
 
 ## install
 

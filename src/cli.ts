@@ -2,7 +2,7 @@
 import { scan } from './scanner.js';
 import { migrate } from './migrator.js';
 import { printScanReport, printMigrationReport } from './reporter.js';
-import { writeFileSync } from 'fs';
+import { writeFileSync, readFileSync } from 'fs';
 
 const [,, command, ...args] = process.argv;
 
@@ -130,6 +130,12 @@ async function main(): Promise<void> {
     case 'list':
       await cmdList();
       break;
+    case '--version':
+    case '-v': {
+      const pkg = JSON.parse(readFileSync(new URL('../package.json', import.meta.url), 'utf8'));
+      console.log(pkg.version);
+      break;
+    }
     case 'help':
     case '--help':
     case '-h':

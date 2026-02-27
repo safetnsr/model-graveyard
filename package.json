@@ -1,6 +1,6 @@
 {
   "name": "@safetnsr/model-graveyard",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "find deprecated AI models in your codebase before they break in production",
   "type": "module",
   "bin": {

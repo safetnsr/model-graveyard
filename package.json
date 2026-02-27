@@ -1,6 +1,6 @@
 {
   "name": "@safetnsr/model-graveyard",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "find deprecated AI models in your codebase before they break in production",
   "type": "module",
   "bin": {
@@ -8,12 +8,12 @@
   },
   "scripts": {
     "build": "tsup",
-    "test": "node --test tests/*.test.ts",
+    "test": "npx tsx --test tests/*.test.ts",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "chalk": "^5.4.1",
-    "glob": "^10.5.0",
+    "glob": "^11.1.0",
     "js-yaml": "^4.1.0"
   },
   "devDependencies": {

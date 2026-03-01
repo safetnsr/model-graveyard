@@ -2,13 +2,13 @@ import { defineConfig } from 'tsup';
 import { readFileSync, writeFileSync } from 'fs';
 
 export default defineConfig({
-  entry: ['src/cli.ts'],
+  entry: ['src/cli.ts', 'src/index.ts'],
   outDir: 'dist',
   format: 'esm',
   target: 'node20',
-  splitting: false,
+  splitting: true,
   clean: true,
-  dts: false,
+  dts: true,
   sourcemap: false,
   async onSuccess() {
     // Prepend shebang to ESM output so it can be used as a CLI binary
